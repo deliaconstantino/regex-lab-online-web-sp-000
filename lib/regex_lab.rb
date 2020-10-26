@@ -19,11 +19,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  if phone.match(/\({0,1}\d{3}\){0,1}\-{0,1}\s{0,1}\d{3}\-{0,1}\s{0,1}\d{4}\b/) != nil
-    return true
-  else
-    false
-  end
+  phone.match(/\({0,1}\d{3}\){0,1}\-{0,1}\s{0,1}\d{3}\-{0,1}\s{0,1}\d{4}\b/) != nil
 end
 
   # /\({0,1}\d{3}\){0,1}\-{0,1}\s{0,1}\d{3}\-{0,1}\s{0,1}\d{4}\b/) != nil
