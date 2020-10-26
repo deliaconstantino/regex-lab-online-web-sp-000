@@ -26,7 +26,7 @@ end
 def valid_phone_number?(phone)
   if phone.scan(/\({0,1}\d{3,10}\){0,1}\-{0,2}\s{0,2}/) != nil
     return true
-  else 
+  else
     false
   end
 end
